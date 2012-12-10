@@ -2,16 +2,16 @@ package org.rudolf.sort;
 
 public class BubbleSort implements Sort{
 	
-	private int[] arr = null;
-	
+	private int[] array = null;	
 		
-	public void setArr(int[] arr) {
-		this.arr = arr;
+	public BubbleSort() {
+		this.array = Utility.getArray();
 	}
 
 	public void sort() {
-		// TODO Auto-generated method stub
-		bubbleSort(arr, true);
+		Utility.printArray(array);
+		bubbleSort(array, true);
+		Utility.printArray(array);
 	}
 	
 	public void bubbleSort(int[] arr, boolean direction) {		
