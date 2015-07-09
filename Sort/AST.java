@@ -30,7 +30,7 @@ public class AST {
       }
     } else if(expr.charAt(i) == '|') {
       ops.push(expr.charAt(i));
-    } else if(expr.charAt(i) == ')) {
+    } else if(expr.charAt(i) == ')') {
       while(ops.peek() != '(') {
         char op = ops.pop();
         if(op == '-') {
